@@ -10,7 +10,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Phillip Ogunnubi | Front-End Developer, UI/UX & Product Designer, Tech Innovator</title>
+    <title>Phillip Oluwatomi | Front-End Developer, UI/UX & Product Designer, Tech Innovator</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -76,7 +76,7 @@
 
    <!-- home
    ================================================== -->
-   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -88,7 +88,7 @@
                 <h3>Guten Tag!</h3>
 
                 <h1>
-  I am Phillip <span style="font-weight: bold; color: #218626;" id="dynamic-lastname">Ogunnubi</span>.<br>
+  I am Phillip <span style="font-weight: bold; color: #218626;" id="dynamic-lastname">Oluwatomi</span>.<br>
   A Product (UI/UX) Designer & Front-End Developer currently based in Nigeria.
 </h1>
 
@@ -98,11 +98,7 @@
                     </a>
                 </div>
 
-                <div class="home-content__scroll">
-                    <a href="#about" class="scroll-link smoothscroll">
-                        <span>Scroll Down</span>
-                    </a>
-                </div>
+                
 
             </div>
 
@@ -131,7 +127,7 @@
   </a>
 </li>
 <li>
-  <a href="sorry.html" target="_blank">
+  <a href="https://github.com/ogunnubiphillip-hash" target="_blank">
     <i class="fab fa-github"></i>
     <span>GitHub</span>
   </a>
@@ -173,36 +169,161 @@
                 </p>
             </div>
 
-            <div class="col-six tab-full right zoom-text">
-                <h3>I've Got Some skills.</h3>
+            <style>
+                /* --- Force Social Icons to Show on Mobile --- */
+@media (max-width: 768px) {
+    .home-social {
+        display: flex !important;
+        flex-direction: row !important; /* Lays them out side-by-side */
+        justify-content: center;
+        position: absolute;
+        bottom: 30px; /* Positions them at the bottom of the hero section */
+        top: auto !important;
+        right: 0 !important;
+        left: 0 !important;
+        width: 100%;
+        transform: none !important;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+    }
+    
+    .home-social li {
+        margin: 0 10px !important;
+        list-style: none;
+    }
+    
+    .home-social li a {
+        font-size: 20px; /* Adjust icon size for mobile */
+    }
+    
+    .home-social li span {
+        display: none !important; /* Hides the text labels (like "LinkedIn") to save space */
+    }
+}
 
-                <ul class="skill-bars">
-                    <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>HTML5</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent85"><span>85%</span></div>
-                    <strong>CSS3</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent70"><span>70%</span></div>
-                    <strong>JQuery</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong>PHP</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong>Figma</strong>
-                    </li>   
-                    <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>Angular JS</strong>
-                    </li>   
-                </ul>
-            </div>
+/* Extra adjustment for very small phones */
+@media (max-width: 480px) {
+    .home-social li {
+        margin: 0 8px !important;
+    }
+    .home-social li a {
+        font-size: 18px;
+    }
+}
+    /* Add this CSS anywhere in your stylesheet or keep it here */
+    .skill-group {
+        margin-bottom: 30px;
+    }
+    .skill-group h4 {
+        margin-bottom: 12px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        opacity: 0.7;
+    }
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .skill-tags li {
+        background: rgba(128, 128, 128, 0.1);
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        padding: 6px 14px;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+    .skill-tags li:hover {
+        background: rgba(128, 128, 128, 0.2);
+    }
+</style>
+
+<div class="col-six tab-full right zoom-text">
+    <h3>I've Got Some skills.</h3>
+
+    <div class="skill-group">
+        <h4>Frontend</h4>
+        <ul class="skill-tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>jQuery</li>
+            <li>AngularJS</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h4>Backend & Data</h4>
+        <ul class="skill-tags">
+            <li>PHP</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>SQL</li>
+            <li>JSON</li>
+            <li>Authentication Systems</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h4>Development Tools</h4>
+        <ul class="skill-tags">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Selenium</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h4>Deployment & Infrastructure</h4>
+        <ul class="skill-tags">
+            <li>Ubuntu / Linux</li>
+            <li>SSH / PuTTY</li>
+            <li>Nginx</li>
+            <li>Cloudflare</li>
+            <li>DNS</li>
+            <li>SSL/TLS</li>
+            <li>Website Deployment</li>
+            <li>Server Configuration</li>
+            <li>Troubleshooting</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h4>UI/UX & Product Design</h4>
+        <ul class="skill-tags">
+            <li>Figma</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>User Flows</li>
+            <li>Information Architecture</li>
+            <li>User Research</li>
+            <li>Usability Testing</li>
+            <li>Design Systems</li>
+            <li>Responsive UI Design</li>
+            <li>Design-to-Code</li>
+        </ul>
+    </div>
+
+    <div class="skill-group">
+        <h4>Other</h4>
+        <ul class="skill-tags">
+            <li>SEO Fundamentals</li>
+            <li>Performance Optimization</li>
+            <li>Responsive Web Development</li>
+            <li>Cross-browser Compatibility</li>
+        </ul>
+    </div>
+</div>
 
         </div> <!-- end about-content -->
 
@@ -296,214 +417,250 @@
     ================================================== -->
     <section id="works" class="s-works target-section">
 
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="col-full">
-                <h3>Portfolio</h3>
-                <h1>See My Latest Projects.</h1>
-                <p class="lead">Explore a showcase of my recent works that blend creativity, strategy, and functionality. Each project reflects my commitment to crafting visually engaging, user-focused solutions that elevate digital experiences across web and mobile platforms.</p>
-                <p>Note: While many of my works can’t be publicly displayed here due to copyright and ownership agreements with the respective companies, selected projects can be shared privately upon request for individuals or organizations with genuine interest.</p>
-            </div>
+    <!-- ================================================== -->
+    <!-- SECTION 1: DEVELOPMENT (Websites I've Built)       -->
+    <!-- ================================================== -->
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+            <h3>Development</h3>
+            <h1>Websites I've Built.</h1>
+            <p class="lead">A selection of websites I've designed, developed and deployed across professional and independent projects.</p>
+            <p>Note: While many of my works can’t be publicly displayed here due to copyright and ownership agreements with the respective companies, selected projects can be shared privately upon request for individuals or organizations with genuine interest.</p>
         </div>
+    </div>
 
-        <div class="row masonry-wrap">
-            <div class="masonry">
+    <div class="row masonry-wrap">
+        <div class="masonry">
+            
+            <!-- Web Project 1 Placeholder -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/web/web1.jpg" class="thumb-link" title="Website 1" data-size="1050x700">
+                            <img src="images/portfolio/web/web1.jpg" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">The National Revival Summit</h3>
+                        <p class="item-folio__cat">Website</p>
+                    </div>
+                    <a href="https://revivalsummit.org/" class="item-folio__project-link" title="Visit Website" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-link"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>Revival Summit is a sacred gathering dedicated to spiritual renewal, covenant alignment, and generational restoration.</p>
+                    </div>
+                </div> 
+            </div> 
 
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-    <!-- Image opens in lightbox -->
-    <a href="images/portfolio/gallery/g-lifebank.jpg" 
-       class="thumb-link" 
-       title="Project Life Bank" 
-       data-size="1050x700">
-        <img src="images/portfolio/lifebank.jpg" 
-             srcset="images/portfolio/lifebank.jpg 1x, images/portfolio/lifebank.jpg 2x" 
-             alt="">
-        <span class="shadow-overlay"></span>
-    </a>
-</div>
-
-<div class="item-folio__text">
-    <h3 class="item-folio__title">Project Life Bank</h3>
-    <p class="item-folio__cat">Mobile App & Web Development</p>
-</div>
-
-<!-- Behance icon goes to your project -->
-<a href="https://www.behance.net/gallery/187930691/PROJECT-LIFE-BANK-REDESIGN"
-   class="item-folio__project-link"
-   title="View on Behance"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-external="true">
-   <i class="im im-behance"></i>
-</a>
-
-<div class="item-folio__caption">
-    <p>A complete redesign focused on enhancing user experience and accessibility for digital banking. Built intuitive flows and responsive layouts to create a modern, seamless financial platform that simplifies online transactions. - UTIVA ASSESSMENT 2023</p>
-</div>
-</div> <!-- end item-folio -->
-</div> <!-- end masonry__brick -->
-
-<div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-
-    <!-- Image opens in lightbox -->
-    <a href="images/portfolio/gallery/g-netflix.png" 
-       class="thumb-link" 
-       title="Netflix Redesign" 
-       data-size="1050x700">
-        <img src="images/portfolio/netflix.png" 
-             srcset="images/portfolio/netflix.png 1x, images/portfolio/netflix.png 2x" 
-             alt="">
-        <span class="shadow-overlay"></span>
-    </a>
-</div>
-
-<div class="item-folio__text">
-    <h3 class="item-folio__title">Netflix Digital Redesign</h3>
-    <p class="item-folio__cat">Mobile App Development</p>
-</div>
-
-<!-- Behance icon goes to your project -->
-<a href="https://www.behance.net/gallery/152878061/Netflix-App-Redesign"
-   class="item-folio__project-link"
-   title="View on Behance"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-external="true">
-   <i class="im im-behance"></i>
-</a>
-
-<div class="item-folio__caption">
-    <p>A conceptual reimagination of Netflix’s interface with improved content discovery and user personalization. Designed a sleek, modern layout emphasizing accessibility, visual hierarchy, and immersive user engagement.</p>
-</div>
-
-</div> <!-- end item-folio -->
-</div> <!-- end masonry__brick -->
-
-               <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-
-    <!-- Image opens in lightbox -->
-    <a href="images/portfolio/gallery/g-Travels.png" 
-       class="thumb-link" 
-       title="Travels & Tours" 
-       data-size="1050x700">
-        <img src="images/portfolio/Travels.png" 
-             srcset="images/portfolio/Travels.png 1x, images/portfolio/Travels.png 2x" 
-             alt="">
-        <span class="shadow-overlay"></span>
-    </a>
-</div>
-
-<div class="item-folio__text">
-    <h3 class="item-folio__title">Travels & Tours</h3>
-    <p class="item-folio__cat">Mobile App Development</p>
-</div>
-
-<!-- Behance icon goes to your project -->
-<a href="https://www.behance.net/gallery/153999977/Travels-Tours"
-   class="item-folio__project-link"
-   title="View on Behance"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-external="true">
-   <i class="im im-behance"></i>
-</a>
-
-<div class="item-folio__caption">
-    <p>Developed a vibrant and user-friendly travel platform for booking tours and destinations. Focused on intuitive navigation, smart filters, and seamless user interactions for an enhanced travel planning experience.</p>
-</div>
-</div> <!-- end item-folio -->
-</div> <!-- end masonry__brick -->
-
-        <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-
-    <!-- Image opens in lightbox -->
-    <a href="images/portfolio/gallery/g-tasgk.png" 
-       class="thumb-link" 
-       title="Time management app" 
-       data-size="1050x700">
-        <img src="images/portfolio/task.png" 
-             srcset="images/portfolio/task.png 1x, images/portfolio/task.png 2x" 
-             alt="">
-        <span class="shadow-overlay"></span>
-    </a>
-</div>
-
-<div class="item-folio__text">
-    <h3 class="item-folio__title">Taskflow Pro</h3>
-    <p class="item-folio__cat">Mobile App Development</p>
-</div>
-
-<!-- Behance icon goes to your project -->
-<a href="https://www.behance.net/gallery/190747543/Task-Management-Mobile-App"
-   class="item-folio__project-link"
-   title="View on Behance"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-external="true">
-   <i class="im im-behance"></i>
-</a>
-
-<div class="item-folio__caption">
-    <p>Created a productivity tool designed to help users manage projects efficiently. Integrated smart scheduling, team collaboration features, and a clean, focused UI that enhances task visibility and workflow management.</p>
-</div>
-</div> <!-- end item-folio -->
-</div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-
-    <!-- Image opens in lightbox -->
-    <a href="images/portfolio/gallery/g-gamze.png" 
-       class="thumb-link" 
-       title="The Game dashboard" 
-       data-size="1050x700">
-        <img src="images/portfolio/game.png" 
-             srcset="images/portfolio/game.png 1x, images/portfolio/game.png 2x" 
-             alt="">
-        <span class="shadow-overlay"></span>
-    </a>
-</div>
-
-<div class="item-folio__text">
-    <h3 class="item-folio__title">The Game</h3>
-    <p class="item-folio__cat">Web Development</p>
-</div>
-
-<!-- Behance icon goes to your project -->
-<a href="https://www.behance.net/gallery/152848551/Game-app"
-   class="item-folio__project-link"
-   title="View on Behance"
-   target="_blank"
-   rel="noopener noreferrer"
-   data-external="true">
-   <i class="im im-behance"></i>
-</a>
-
-<div class="item-folio__caption">
-    <p>Developed an interactive web-based gaming platform with dynamic visuals and responsive performance. Focused on user engagement through smooth transitions, real-time updates, and a refined gameplay interface.</p>
-</div>
-
-</div> <!-- end item-folio -->
-</div> <!-- end masonry__brick -->
-
+            <!-- Web Project 2 Placeholder -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/web/web2.jpg" class="thumb-link" title="Website 2" data-size="1050x700">
+                            <img src="images/portfolio/web/web2.jpg" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Follow Jesus Church</h3>
+                        <p class="item-folio__cat">Website</p>
+                    </div>
+                    <a href="https://followjesus.church/" class="item-folio__project-link" title="Visit Website" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-link"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>followjesus.church helps churches stay connected with visitors through thoughtful and consistent follow-up, so nobody feels forgotten after walking through your church doors.</p>
+                    </div>
+                </div> 
             </div>
+
+            <!-- Web Project 3 Placeholder -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/web/web3.jpg" class="thumb-link" title="Website 3" data-size="1050x700">
+                            <img src="images/portfolio/web/web3.jpg" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">IM LightUP</h3>
+                        <p class="item-folio__cat">Website</p>
+                    </div>
+                    <a href="https://imlightup.ng/" class="item-folio__project-link" title="Visit Website" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-link"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>IM Lightup is dedicated to transforming events through thoughtful lighting design. </p>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Web Project 4 Placeholder -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/web/web4.jpg" class="thumb-link" title="Website 4" data-size="1050x700">
+                            <img src="images/portfolio/web/web4.jpg" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Company Project</h3>
+                        <p class="item-folio__cat">Website</p>
+                    </div>
+                    <a href="https://threecountelectricllc.com/" class="item-folio__project-link" title="Visit Website" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-link"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>A brief description of this website's purpose, the tech stack used, and the impact it achieved.</p>
+                    </div>
+                </div> 
+            </div>
+
+        </div> <!-- end masonry -->
+    </div> <!-- end masonry-wrap -->
+
     <div style="display: flex; justify-content: center; width: 100%; margin-top: 70px; margin-bottom: -100px;">
-    <a href="https://www.behance.net/phillipogunnubi" class="btn btn--primary" style="width: auto;">View More</a>
-</div>
-    </section> <!-- end works -->
+        <a href="webdev.html" class="btn btn--primary" style="width: auto;">View More</a>
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- SECTION 2: UI/UX & PRODUCT DESIGN WORK             -->
+    <!-- ================================================== -->
+    <!-- Added margin-top to separate the two portfolios visually -->
+    <div class="row narrow section-intro has-bottom-sep" style="margin-top: 200px;">
+        <div class="col-full">
+            <h3>UI/UX & Product Design</h3>
+            <h1>Selected Work.</h1>
+            <p class="lead">Explore selected digital products and interfaces I've designed, combining user experience, visual design, interaction, and functionality to create practical digital experiences.</p>
+        </div>
+    </div>
+
+    <div class="row masonry-wrap">
+        <div class="masonry">
+
+            <!-- Life Bank -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/gallery/g-lifebank.jpg" class="thumb-link" title="Project Life Bank" data-size="1050x700">
+                            <img src="images/portfolio/lifebank.jpg" srcset="images/portfolio/lifebank.jpg 1x, images/portfolio/lifebank.jpg 2x" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Project Life Bank</h3>
+                        <p class="item-folio__cat">Mobile App & Web Development</p>
+                    </div>
+                    <a href="https://www.behance.net/gallery/187930691/PROJECT-LIFE-BANK-REDESIGN" class="item-folio__project-link" title="View on Behance" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-behance"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>A complete redesign focused on enhancing user experience and accessibility for digital banking. Built intuitive flows and responsive layouts to create a modern, seamless financial platform that simplifies online transactions. - UTIVA ASSESSMENT 2023</p>
+                    </div>
+                </div> 
+            </div> 
+
+            <!-- Netflix -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/gallery/g-netflix.png" class="thumb-link" title="Netflix Redesign" data-size="1050x700">
+                            <img src="images/portfolio/netflix.png" srcset="images/portfolio/netflix.png 1x, images/portfolio/netflix.png 2x" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Netflix Digital Redesign</h3>
+                        <p class="item-folio__cat">Mobile App Development</p>
+                    </div>
+                    <a href="https://www.behance.net/gallery/152878061/Netflix-App-Redesign" class="item-folio__project-link" title="View on Behance" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-behance"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>A conceptual reimagination of Netflix’s interface with improved content discovery and user personalization. Designed a sleek, modern layout emphasizing accessibility, visual hierarchy, and immersive user engagement.</p>
+                    </div>
+                </div> 
+            </div> 
+
+            <!-- Travels & Tours -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/gallery/g-travels.jpg" class="thumb-link" title="Travels & Tours" data-size="1050x700">
+                            <img src="images/portfolio/travels.jpg" srcset="images/portfolio/travels.jpg 1x, images/portfolio/travels.jpg 2x" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Travels & Tours</h3>
+                        <p class="item-folio__cat">Mobile App Development</p>
+                    </div>
+                    <a href="https://www.behance.net/gallery/153999977/Travels-Tours" class="item-folio__project-link" title="View on Behance" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-behance"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>Developed a vibrant and user-friendly travel platform for booking tours and destinations. Focused on intuitive navigation, smart filters, and seamless user interactions for an enhanced travel planning experience.</p>
+                    </div>
+                </div> 
+            </div> 
+
+            <!-- Taskflow -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/gallery/g-tasgk.png" class="thumb-link" title="Time management app" data-size="1050x700">
+                            <img src="images/portfolio/task.png" srcset="images/portfolio/task.png 1x, images/portfolio/task.png 2x" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">Taskflow Pro</h3>
+                        <p class="item-folio__cat">Mobile App Development</p>
+                    </div>
+                    <a href="https://www.behance.net/gallery/190747543/Task-Management-Mobile-App" class="item-folio__project-link" title="View on Behance" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-behance"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>Created a productivity tool designed to help users manage projects efficiently. Integrated smart scheduling, team collaboration features, and a clean, focused UI that enhances task visibility and workflow management.</p>
+                    </div>
+                </div> 
+            </div> 
+
+            <!-- The Game -->
+            <div class="masonry__brick">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="images/portfolio/gallery/g-gamze.png" class="thumb-link" title="The Game dashboard" data-size="1050x700">
+                            <img src="images/portfolio/game.png" srcset="images/portfolio/game.png 1x, images/portfolio/game.png 2x" alt="">
+                            <span class="shadow-overlay"></span>
+                        </a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h3 class="item-folio__title">The Game</h3>
+                        <p class="item-folio__cat">Web Development</p>
+                    </div>
+                    <a href="https://www.behance.net/gallery/152848551/Game-app" class="item-folio__project-link" title="View on Behance" target="_blank" rel="noopener noreferrer" data-external="true">
+                        <i class="im im-behance"></i>
+                    </a>
+                    <div class="item-folio__caption">
+                        <p>Developed an interactive web-based gaming platform with dynamic visuals and responsive performance. Focused on user engagement through smooth transitions, real-time updates, and a refined gameplay interface.</p>
+                    </div>
+                </div> 
+            </div> 
+
+        </div> <!-- end masonry -->
+    </div> <!-- end masonry-wrap -->
+
+    <div style="display: flex; justify-content: center; width: 100%; margin-top: 70px; margin-bottom: -100px;">
+        <a href="https://www.behance.net/phillipogunnubi" class="btn btn--primary" style="width: auto;">View More</a>
+    </div>
+
+</section> <!-- end works -->
 
 
 
@@ -564,6 +721,41 @@
         </div> <!-- end testimonials -->
 
     </div> <!-- end s-testimonials -->
+
+
+<!-- s-stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    96
+                </div>
+                <h4>Cups of Coffee</h4>
+            </div>
+            <div class="col-block stats__col stats__col--highlight">
+                <div class="stats__upsign">
+                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="stats__count">
+                    471
+                </div>
+                <h4>Projects Completed</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__upsign">
+                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="stats__count">
+                    471
+                </div>
+                <h4>Happy Clients</h4> 
+            </div>
+
+        </div>
+    </section> <!-- end s-stats -->
+
 
 
    <!-- blog
@@ -631,40 +823,6 @@ async function loadTechPosts() {
 loadTechPosts();
 </script>        
     </section>
-
-
-    <!-- s-stats
-    ================================================== -->
-    <section id="stats" class="s-stats">
-        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
-
-            <div class="col-block stats__col">
-                <div class="stats__count">
-                    96
-                </div>
-                <h4>Cups of Coffee</h4>
-            </div>
-            <div class="col-block stats__col stats__col--highlight">
-                <div class="stats__upsign">
-                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
-                </div>
-                <div class="stats__count">
-                    435
-                </div>
-                <h4>Projects Completed</h4>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__upsign">
-                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
-                </div>
-                <div class="stats__count">
-                    435
-                </div>
-                <h4>Happy Clients</h4> 
-            </div>
-
-        </div>
-    </section> <!-- end s-stats -->
 
 
     <!-- s-stats
@@ -780,7 +938,7 @@ loadTechPosts();
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright Phillip 0. All rights reserved</span>
+                    <span>© Copyright Phillip 0 2025. All rights reserved</span>
                 </div>
 
                 <div class="go-top">
@@ -862,7 +1020,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
   const lastnameElement = document.getElementById('dynamic-lastname');
-  const originalLast = "Ogunnubi";
+  const originalLast = "Oluwatomi";
   const alternateLast = "Oreoluwa";
 
   setInterval(() => {
